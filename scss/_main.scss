@@ -1,0 +1,44 @@
+#main {
+    background-color: black;
+    .container {
+        @include padY(150px, 80px);
+
+        @include resp ($lg) {
+            @include padY (190px, 125px);
+        }
+
+        @include resp ($xl) {
+            @include padY (225px, 150px);
+        }
+        .text {
+            // common style 
+            h1, p {
+                text-align: center;
+                color: white;
+            }
+            .display-1 {
+                font-family: Bern;
+                font-size: 5rem;
+                text-transform: capitalize;
+                // responsibve 
+                @include resp ($lg) {
+                    font-size: 6.5rem;
+                }
+                @include resp ($xl) {
+                    font-size: 7.5rem;
+                }
+                @include resp ($xxl) {
+                    font-size: 9rem;
+                }
+            }
+            .text-white {
+                text-transform: capitalize;
+            }
+
+            .para {
+                margin-top: 25px;
+            }
+
+        }
+    }
+}

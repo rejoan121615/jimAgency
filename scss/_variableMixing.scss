@@ -29,3 +29,14 @@ $fifty_red: #e74c3c;
 }
 
 
+
+// padding 
+@mixin padY ($t, $b) {
+    padding-top: $t;
+    padding-bottom: $b;
+}
+@mixin padX ($l, $r) {
+    padding-left: $l;
+    padding-right: $r;
+}
+

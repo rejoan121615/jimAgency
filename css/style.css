@@ -52,11 +52,64 @@
   border-bottom: none !important;
 }
 
+#main {
+  background-color: black;
+}
+#main .container {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 992px) {
+  #main .container {
+    padding-top: 190px;
+    padding-bottom: 125px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main .container {
+    padding-top: 225px;
+    padding-bottom: 150px;
+  }
+}
+#main .container .text h1, #main .container .text p {
+  text-align: center;
+  color: white;
+}
+#main .container .text .display-1 {
+  font-family: Bern;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 992px) {
+  #main .container .text .display-1 {
+    font-size: 6.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main .container .text .display-1 {
+    font-size: 7.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #main .container .text .display-1 {
+    font-size: 9rem;
+  }
+}
+#main .container .text .text-white {
+  text-transform: capitalize;
+}
+#main .container .text .para {
+  margin-top: 25px;
+}
+
 .section_heading {
   font-family: Barn;
 }
 
-a, img, span, i {
+a,
+img,
+span,
+i {
   display: inline-block;
   color: black;
 }
@@ -67,6 +120,8 @@ a, img, span, i {
   text-transform: capitalize;
   text-align: left;
   color: black;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 
 .headerstyle {
