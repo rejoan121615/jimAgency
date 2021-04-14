@@ -151,6 +151,22 @@
   }
 }
 
+#video {
+  display: none;
+}
+#video .container {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background: url("../img/video_bg.png") no-repeat top left;
+  background-size: 55% 55%;
+}
+#video .container .video_wrapper iframe {
+  width: 80%;
+  height: 610px;
+  display: block;
+  margin: 0 auto;
+}
+
 .section_heading {
   font-family: Barn;
 }

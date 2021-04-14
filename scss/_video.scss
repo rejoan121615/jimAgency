@@ -1,0 +1,18 @@
+#video {
+    display: none;
+    .container {
+        @include padY(130px, 130px);
+        background: url('../img/video_bg.png') no-repeat top left;
+        background-size: 55% 55%;
+        .video_wrapper {
+            iframe {
+                width: 80%;
+                height: 610px;
+                display: block;
+                margin: 0 auto;
+            }
+
+        }
+    }
+}
+
