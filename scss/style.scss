@@ -2,19 +2,37 @@
 @import "fonts";
 @import "header";
 @import "main";
-@import 'option';
-@import 'video';
+@import "option";
+@import "video";
+@import "trainingProgram";
+@import "ourClients";
 
 // variable
 
 .section_heading {
-    font-family: Barn;
+    font-family: Bern;
+    font-size: 5rem;
+    text-transform: capitalize;
+    // responsibve
+    @include resp($lg) {
+        font-size: 6.5rem;
+    }
+    @include resp($xl) {
+        font-size: 7.5rem;
+    }
+    @include resp($xxl) {
+        font-size: 9rem;
+    }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: SansBold;
 }
-
 
 a,
 img,
@@ -28,7 +46,6 @@ i {
     @include fonts();
     font-size: 1.1rem;
     letter-spacing: 2px;
-
 }
 
 .headerstyle {

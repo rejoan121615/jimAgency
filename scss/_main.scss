@@ -17,19 +17,7 @@
                 color: white;
             }
             .display-1 {
-                font-family: Bern;
-                font-size: 5rem;
-                text-transform: capitalize;
-                // responsibve 
-                @include resp ($lg) {
-                    font-size: 6.5rem;
-                }
-                @include resp ($xl) {
-                    font-size: 7.5rem;
-                }
-                @include resp ($xxl) {
-                    font-size: 9rem;
-                }
+                @extend .section_heading;
             }
             .text-white {
                 text-transform: capitalize;

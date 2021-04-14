@@ -1,0 +1,83 @@
+#clients {
+    // clients and texts
+    .client_container {
+        @include padY(150px, 80px);
+        // heading
+        .section_heading {
+            text-align: center;
+        }
+        // img slide
+        .image_slide {
+            height: initial;
+            margin-top: 80px;
+            @include resp ($xl) {
+                height: 450px;
+                margin-top: initial;
+            }
+            @include resp ($xxl) {
+                height: 600px;
+            }
+            .img_wrapper {
+                width: 100%;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include resp($xl) {
+                    position: relative;
+                    margin-top: 50px;
+                }
+
+                .img_container {
+                    margin-bottom: 40px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    @include resp($xl) {
+                        cursor: pointer;
+                        width: 40%;
+                        height: 270px;
+                        position: absolute;
+                        border: 3px solid black;
+                        @for $var from 1 to 9 {
+                            &:nth-child(#{$var}) {
+                                top: ($var * 10) + px;
+                                left: ($var * 8%);
+                            }
+                        }
+                        z-index: 100;
+
+                        transition: transform 1s;
+
+                        // responsive 
+                        @include resp ($xxl) {
+                            width: 60%;
+                            height: 425px;
+                        }
+                    }
+                    // animation
+                    &:hover {
+                        @include resp($xl) {
+                            transform: translate3d(-300px, 40px, 0px);
+                            // z-index: 300;
+                        }
+                        @include resp ($xxl) {
+                            transform: translate3d(-400px, 40px, 0px);
+
+                        }
+                    }
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        // texts 
+        .texts {
+            margin-top: 25px;
+            text-align: center;
+        }
+    }
+}
