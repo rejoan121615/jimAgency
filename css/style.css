@@ -102,8 +102,61 @@
   margin-top: 25px;
 }
 
+#option .container .card {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+}
+#option .container .card:hover {
+  background-color: #e74c3c;
+}
+#option .container .card .card-title {
+  font-family: SansMedium;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+#option .container .card .card-link {
+  font-family: SansMedium;
+  padding: 10px 22px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  border: 2px solid transparent;
+}
+#option .container .card .card-link:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+#option .program_container .row .head_title {
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  #option .program_container .row .head_title {
+    text-align: left;
+  }
+}
+#option .program_container .row .middle_border {
+  background: url("../img/main-start-end.png") no-repeat center center;
+  background-size: 150px;
+  height: 60px;
+}
+@media only screen and (min-width: 992px) {
+  #option .program_container .row .middle_border {
+    background: url("../img/middle border.png") no-repeat center center;
+    background-size: contain;
+    height: auto;
+  }
+}
+
 .section_heading {
   font-family: Barn;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: SansBold;
 }
 
 a,

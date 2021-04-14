@@ -1,0 +1,58 @@
+#option {
+    .container {
+        .card {
+            @include padX(30px, 30px);
+            @include padY(65px, 65px);
+            transition: background-color 0.5s ease-in-out;
+            cursor: pointer;
+            // animation
+            &:hover {
+                background-color: $fifty_red;
+            }
+
+            .card-title {
+                font-family: SansMedium;
+                font-size: 1.4rem;
+                text-transform: capitalize;
+            }
+
+            .card-link {
+                font-family: $semiBold;
+                padding: 10px 22px;
+                text-transform: capitalize;
+                margin-top: 10px;
+                border: 2px solid transparent;
+                // hover
+                &:hover {
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+    // program section
+    .program_container {
+        .row {
+            .head_title {
+                text-align: center;
+                @include resp($lg) {
+                    text-align: left;
+                }
+            }
+            // middle border section
+            .middle_border {
+                background: url("../img/main-start-end.png") no-repeat center
+                    center;
+                background-size: 150px;
+                height: 60px;
+                @include resp($lg) {
+                    background: url("../img/middle\ border.png") no-repeat
+                        center center;
+                    background-size: contain;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
