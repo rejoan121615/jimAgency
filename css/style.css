@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Bern;
+  src: url("../fonts/bernadette.ttf");
+}
+@font-face {
+  font-family: "SansBold";
+  src: url("../fonts/SansBold.otf");
+}
+@font-face {
+  font-family: "SansMedium";
+  src: url("../fonts/SansMedium.otf");
+}
+@font-face {
+  font-family: "SansRegular";
+  src: url("../fonts/SansRegular.otf");
+}
+@font-face {
+  font-family: "SansThin";
+  src: url("../fonts/SansThin.otf");
+}
+.navbar {
+  background-color: #4848483d;
+}
+.navbar .nav-link {
+  font-family: SansMedium;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+.navbar .container .navbar-brand img {
+  width: 45px;
+}
+.navbar .container .navbar-brand span {
+  font-family: arial;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  text-align: left;
+  color: #e74c3c;
+  margin-left: 12px;
+}
+.navbar .container .collapse {
+  flex-grow: 0;
+}
+.navbar .container .collapse .navbar-nav .nav-item {
+  flex-grow: 1;
+}
+.navbar .container .collapse .dropdown-menu .nav-item {
+  border-bottom: 1px solid #e74c3c !important;
+}
+.navbar .container .collapse .dropdown-menu .nav-item:last-child {
+  border-bottom: none !important;
+}
+
+.section_heading {
+  font-family: Barn;
+}
+
+a, img, span, i {
+  display: inline-block;
+  color: black;
+}
+
+.para {
+  font-family: SansMedium;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: left;
+  color: black;
+}
+
+.headerstyle {
+  font-family: Bern;
+}
+
+/*# sourceMappingURL=style.css.map */

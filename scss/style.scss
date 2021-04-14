@@ -1,0 +1,26 @@
+@import 'variableMixing';
+@import 'fonts';
+@import 'header';
+
+
+// variable 
+
+
+
+
+.section_heading {
+    font-family: Barn;
+}
+
+a, img, span, i {
+    display: inline-block;
+    color: black;
+}
+
+.para {
+    @include fonts ();
+}
+
+.headerstyle {
+    font-family: Bern;
+}

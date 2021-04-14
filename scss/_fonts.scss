@@ -1,0 +1,16 @@
+$fonts : (
+    Bern: '../fonts/bernadette.ttf',
+    'SansBold': '../fonts/SansBold.otf',
+    'SansMedium': '../fonts/SansMedium.otf',
+    'SansRegular': '../fonts/SansRegular.otf',
+    'SansThin': '../fonts/SansThin.otf'
+);
+
+
+@each $name, $path in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url($path);
+    }
+}
+

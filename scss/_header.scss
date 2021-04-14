@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #4848483d;
+    // common style 
+    .nav-link {
+        @include fonts(SansMedium, 1rem, uppercase, center, black);
+    }
+    .container {
+
+
+
+        // nav brand style 
+
+        .navbar-brand {
+            img {
+                width: 45px;
+            }
+            span {
+                @include fonts(arial, 1.7rem, capitalize, left, $fifty_red);
+                margin-left: 12px;
+            }
+        }
+
+        // nav bar style 
+
+        .collapse {
+            flex-grow: 0;
+
+            // responsive 
+            // @include resp ($lg) {
+            //     width: ;
+            // }
+
+            .navbar-nav {
+                .nav-item {
+                    flex-grow: 1;
+                }
+            }
+
+            .dropdown-menu {
+
+                .nav-item {
+                    border-bottom: 1px solid $fifty_red!important;
+                    &:last-child {
+                        border-bottom: none!important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// variable 
+$fifty_red: #e74c3c;
+
+
+
+// mixing 
+@mixin fonts ($name: SansMedium, $size: 1.5rem, $trans: capitalize, $dir: left, $color: black ) {
+    font-family: $name;
+    font-size: $size;
+    text-transform: $trans;
+    text-align: $dir;
+    color: $color;
+}
+
+// responsive varable 
+
+  $xs: 0;
+  $sm: 576px;
+  $md: 768px;
+  $lg: 992px;
+  $xl: 1200px;
+  $xxl: 1400px;
+
+// responsive 
+@mixin resp ($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+
