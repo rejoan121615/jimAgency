@@ -1,0 +1,30 @@
+#diet_question {
+    .container {
+        padding-top: 0px;
+        padding-bottom: 100px;
+        // responsive 
+        @include resp ($xl) {
+            padding-top: 35px;
+            padding-bottom: 135px;
+        }
+        .accordion-item {
+            .accordion-header {
+            }
+            .accordion-button {
+                @include fonts ($regular, 1.6rem, initial, left, black);
+                &:not(.collapsed) span {
+                    color: $fifty_red;
+                }
+                &::after {
+                    background-image: url("../icons/accordion/add.png");
+                    width: 2rem;
+                    height: 2rem;
+                    background-size: 2rem;
+                }
+                &:not(.collapsed)::after {
+                    background-image: url("../icons/accordion/minus.png");
+                }
+            }
+        }
+    }
+}

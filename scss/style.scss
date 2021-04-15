@@ -6,6 +6,7 @@
 @import "video";
 @import "trainingProgram";
 @import "ourClients";
+@import 'qusAnswer';
 
 // variable
 
@@ -50,4 +51,18 @@ i {
 
 .headerstyle {
     font-family: Bern;
+}
+
+
+.container {
+    @include padY(80px, 80px);
+}
+
+.heading_sm {
+    @include fonts (SansBold, 2rem, capitalize, center, white);
+}
+
+.heading_md {
+    @extend .heading_sm;
+    font-size: 3rem;
 }

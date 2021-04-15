@@ -6,6 +6,10 @@
     }
     .container {
 
+        @include resp ($lg) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
 
 
         // nav brand style 
