@@ -47,3 +47,35 @@ getBtns.forEach((item, index) => {
         contentChangeHandler(index, data, getImg, getText);
     });
 });
+
+// product lists
+const productList = [
+    "./img/product_list/product 1.png",
+    "./img/product_list/product 2.png",
+    "./img/product_list/product 3.png",
+    "./img/product_list/product 4.png",
+    "./img/product_list/product 5.png",
+    "./img/product_list/product 6.png",
+];
+
+const getImgButton = document.querySelectorAll(
+    "#our_product .product_container .pro_btn_wrap div.col-12"
+);
+
+const productImgTag = document.querySelector(".product_discription .img_wrapper img");
+
+// image change handler 
+const changeHandler = (index, list, img) => {
+    img.src = list[index]
+} 
+
+
+
+// add event listener 
+getImgButton.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        removeActive(getImgButton, item);
+        changeHandler(index, productList, productImgTag, null);
+    })
+})
+
