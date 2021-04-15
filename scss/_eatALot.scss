@@ -1,29 +1,15 @@
 #eatALot {
-    background: url("../img/background_sm.png") no-repeat center center;
-    background-size: cover;
-    // responsive 
-    @include resp ($md) {
-        background-image: url('../img/background_xxl.png');
-    }
     .container {
-        // responsive 
-        @include resp ($lg) {
-            padding-top: 135px;
-            padding-bottom: 135px;
-        }
+        @include padY (130px, 100px);
+
         .row {
             .heading_sm {
-                font-size: 3rem;
-                color: black;
-                span {
-                    color: $fifty_red;
-                }
-            
+                @extend .rules_head;
             }
             .para {
-                    color: white;
-                    mix-blend-mode: difference;
-                }
+                color: white;
+                mix-blend-mode: difference;
+            }
         }
     }
 }

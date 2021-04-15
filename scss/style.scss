@@ -6,9 +6,9 @@
 @import "video";
 @import "trainingProgram";
 @import "ourClients";
-@import 'qusAnswer';
-@import 'fitnessFrom';
-@import 'eatALot';
+@import "qusAnswer";
+@import "fitnessFrom";
+@import "eatALot";
 
 // variable
 
@@ -52,16 +52,36 @@ i {
     font-family: Bern;
 }
 
-
 .container {
     @include padY(80px, 80px);
+    @include resp ($lg) {
+        @include padY (100px, 100px);
+    }
+    @include resp ($xl) {
+        @include padY (120px, 120px);
+    }
 }
 
 .heading_sm {
-    @include fonts (SansBold, 2rem, capitalize, center, white);
+    @include fonts(SansBold, 2rem, capitalize, center, white);
 }
 
 .heading_md {
     @extend .heading_sm;
     font-size: 3rem;
+}
+
+.rules_head {
+    // responsive
+    font-size: 2rem;
+    color: black;
+    @include resp($sm) {
+        font-size: 2.2rem;
+    }
+    @include resp($xl) {
+        font-size: 3rem;
+    }
+    span {
+        color: $fifty_red;
+    }
 }
