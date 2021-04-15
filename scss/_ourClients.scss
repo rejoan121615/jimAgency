@@ -10,11 +10,11 @@
         .image_slide {
             height: initial;
             margin-top: 80px;
-            @include resp ($xl) {
+            @include resp($xl) {
                 height: 450px;
                 margin-top: initial;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 height: 600px;
             }
             .img_wrapper {
@@ -49,8 +49,8 @@
 
                         transition: transform 1s;
 
-                        // responsive 
-                        @include resp ($xxl) {
+                        // responsive
+                        @include resp($xxl) {
                             width: 60%;
                             height: 425px;
                         }
@@ -61,9 +61,8 @@
                             transform: translate3d(-300px, 40px, 0px);
                             // z-index: 300;
                         }
-                        @include resp ($xxl) {
+                        @include resp($xxl) {
                             transform: translate3d(-400px, 40px, 0px);
-
                         }
                     }
 
@@ -74,10 +73,36 @@
             }
         }
 
-        // texts 
+        // texts
         .texts {
             margin-top: 25px;
             text-align: center;
+        }
+    }
+    // brand container
+    .brand_container {
+        
+        .row > .col-12 > img {
+            // responsive design
+            @include resp($lg) {
+                max-width: 500px;
+            }
+            @include resp($xl) {
+                max-width: 600px;
+            }
+        }
+        .brand_wrapper {
+            img {
+                border-radius: 20px;
+                margin-bottom: 25px;
+                @include resp ($lg) {
+                    border-radius: 30px;
+                    margin-bottom: 0px;
+                }
+                @include resp($xl) {
+                    border-radius: 40px;
+                }
+            }
         }
     }
 }

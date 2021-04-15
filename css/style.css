@@ -297,6 +297,31 @@
   margin-top: 25px;
   text-align: center;
 }
+@media only screen and (min-width: 992px) {
+  #clients .brand_container .row > .col-12 > img {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #clients .brand_container .row > .col-12 > img {
+    max-width: 600px;
+  }
+}
+#clients .brand_container .brand_wrapper img {
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 992px) {
+  #clients .brand_container .brand_wrapper img {
+    border-radius: 30px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #clients .brand_container .brand_wrapper img {
+    border-radius: 40px;
+  }
+}
 
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
