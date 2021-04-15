@@ -9,6 +9,8 @@
 @import "qusAnswer";
 @import "fitnessFrom";
 @import "eatALot";
+@import "eatFrequently";
+@import "getAmpleFats";
 
 // variable
 
@@ -54,11 +56,11 @@ i {
 
 .container {
     @include padY(80px, 80px);
-    @include resp ($lg) {
-        @include padY (100px, 100px);
+    @include resp($lg) {
+        @include padY(100px, 100px);
     }
-    @include resp ($xl) {
-        @include padY (120px, 120px);
+    @include resp($xl) {
+        @include padY(120px, 120px);
     }
 }
 

@@ -1,0 +1,10 @@
+#getAmpleFats {
+    background: #FFF;
+    .container {
+        .row {
+            .heading_sm {
+                @extend .rules_head;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+#ear_frequently {
+    background-color: black;
+    .container {
+        .para, .heading_sm {
+            color: white!important;
+        }
+
+        .heading_sm {
+            @extend .rules_head;
+        }
+    }
+}

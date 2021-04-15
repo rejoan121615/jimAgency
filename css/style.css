@@ -432,6 +432,15 @@
   mix-blend-mode: difference;
 }
 
+#ear_frequently {
+  background-color: black;
+}
+#ear_frequently .container .para, #ear_frequently .container .heading_sm, #ear_frequently .container .heading_md {
+  color: white !important;
+}
+#getAmpleFats {
+  background: #FFF;
+}
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
   font-size: 5rem;
@@ -508,21 +517,21 @@ i {
   font-size: 3rem;
 }
 
-.rules_head, #eatALot .container .row .heading_sm, #eatALot .container .row .heading_md {
+.rules_head, #eatALot .container .row .heading_sm, #ear_frequently .container .heading_sm, #getAmpleFats .container .row .heading_sm, #eatALot .container .row .heading_md, #ear_frequently .container .heading_md, #getAmpleFats .container .row .heading_md {
   font-size: 2rem;
   color: black;
 }
 @media only screen and (min-width: 576px) {
-  .rules_head, #eatALot .container .row .heading_sm, #eatALot .container .row .heading_md {
+  .rules_head, #eatALot .container .row .heading_sm, #ear_frequently .container .heading_sm, #getAmpleFats .container .row .heading_sm, #eatALot .container .row .heading_md, #ear_frequently .container .heading_md, #getAmpleFats .container .row .heading_md {
     font-size: 2.2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .rules_head, #eatALot .container .row .heading_sm, #eatALot .container .row .heading_md {
+  .rules_head, #eatALot .container .row .heading_sm, #ear_frequently .container .heading_sm, #getAmpleFats .container .row .heading_sm, #eatALot .container .row .heading_md, #ear_frequently .container .heading_md, #getAmpleFats .container .row .heading_md {
     font-size: 3rem;
   }
 }
-.rules_head span, #eatALot .container .row .heading_sm span, #eatALot .container .row .heading_md span {
+.rules_head span, #eatALot .container .row .heading_sm span, #ear_frequently .container .heading_sm span, #getAmpleFats .container .row .heading_sm span, #eatALot .container .row .heading_md span, #ear_frequently .container .heading_md span, #getAmpleFats .container .row .heading_md span {
   color: #e74c3c;
 }
 
