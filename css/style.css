@@ -423,6 +423,33 @@
   max-width: 500px;
 }
 
+#eatALot {
+  background: url("../img/background_sm.png") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+  #eatALot {
+    background-image: url("../img/background_xxl.png");
+  }
+}
+@media only screen and (min-width: 992px) {
+  #eatALot .container {
+    padding-top: 135px;
+    padding-bottom: 135px;
+  }
+}
+#eatALot .container .row .heading_sm, #eatALot .container .row .heading_md {
+  font-size: 3rem;
+  color: black;
+}
+#eatALot .container .row .heading_sm span, #eatALot .container .row .heading_md span {
+  color: #e74c3c;
+}
+#eatALot .container .row .para {
+  color: white;
+  mix-blend-mode: difference;
+}
+
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
   font-size: 5rem;
