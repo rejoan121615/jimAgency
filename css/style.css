@@ -441,6 +441,10 @@
 #getAmpleFats {
   background: #FFF;
 }
+#our_product {
+  background-color: #f5f5f5;
+}
+
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
   font-size: 5rem;
