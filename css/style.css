@@ -359,6 +359,70 @@
   background-image: url("../icons/accordion/minus.png");
 }
 
+#fitness_from {
+  background: red url("../img/fitness_form_within_bg.png") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 1200px) {
+  #fitness_from .container {
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #fitness_from .container {
+    padding-top: 150px;
+  }
+}
+#fitness_from .container .fitness_wrapper h1,
+#fitness_from .container .fitness_wrapper h3 {
+  color: white;
+}
+#fitness_from .container .fitness_wrapper .section_heading, #fitness_from #main .container .fitness_wrapper .text .display-1, #main #fitness_from .container .fitness_wrapper .text .display-1, #fitness_from #main .container .text .fitness_wrapper .display-1, #main #fitness_from .container .text .fitness_wrapper .display-1 {
+  font-family: SansBold;
+}
+#fitness_from .container #excercise_type .btn-group button {
+  text-transform: capitalize;
+  font-size: 22px;
+}
+@media only screen and (min-width: 768px) {
+  #fitness_from .container #excercise_type .btn-group button {
+    padding: 10px 25px;
+    font-family: SansMedium;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #fitness_from .container #excercise_type .btn-group button {
+    padding: 10px 40px;
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #fitness_from .container #excercise_type .btn-group button {
+    font-size: 2.8rem;
+  }
+}
+#fitness_from .container #excercise_type .btn-group button.active, #fitness_from .container #excercise_type .btn-group button:hover {
+  color: black !important;
+}
+#fitness_from .container #excercise_type #content_container {
+  margin-top: 100px;
+}
+#fitness_from .container #excercise_type #content_container .texts p {
+  margin-top: 40px;
+}
+@media only screen and (min-width: 1200px) {
+  #fitness_from .container #excercise_type #content_container .texts p {
+    line-height: 1.8rem;
+  }
+}
+#fitness_from .container #excercise_type #content_container .images img {
+  max-width: 500px;
+}
+
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
   font-size: 5rem;
@@ -372,11 +436,6 @@
 @media only screen and (min-width: 1200px) {
   .section_heading, #main .container .text .display-1 {
     font-size: 7.5rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .section_heading, #main .container .text .display-1 {
-    font-size: 9rem;
   }
 }
 

@@ -1,0 +1,73 @@
+#fitness_from {
+    background: red url("../img/fitness_form_within_bg.png") no-repeat center
+        center;
+    background-size: cover;
+
+    .container {
+        @include resp ($xl) {
+            padding-bottom: 0px;
+        }
+        @include resp($xl) {
+            padding-top: 150px;
+        }
+        // fitness wrapper
+        .fitness_wrapper {
+            h1,
+            h3 {
+                color: white;
+            }
+            .section_heading {
+                font-family: SansBold;
+            }
+        }
+
+        // excercise type
+        #excercise_type {
+            .btn-group {
+                button {
+                    text-transform: capitalize;
+                    font-size: 22px;
+                    @include resp($md) {
+                        padding: 10px 25px;
+
+                        @include fonts(
+                            $semiBold,
+                            1.8rem,
+                            capitalize,
+                            center,
+                            white
+                        );
+                    }
+                    @include resp($lg) {
+                        padding: 10px 40px;
+                        font-size: 2.2rem;
+                    }
+                    @include resp($xxl) {
+                        font-size: 2.8rem;
+                    }
+                    &.active,
+                    &:hover {
+                        color: black !important;
+                    }
+                }
+            }
+            // content container
+            #content_container {
+                margin-top: 100px;
+                .texts p {
+                    margin-top: 40px;
+
+                    @include resp($xl) {
+                        line-height: 1.8rem;
+                    }
+                }
+
+                .images {
+                    img {
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}

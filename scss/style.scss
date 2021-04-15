@@ -7,6 +7,7 @@
 @import "trainingProgram";
 @import "ourClients";
 @import 'qusAnswer';
+@import 'fitnessFrom';
 
 // variable
 
@@ -20,9 +21,6 @@
     }
     @include resp($xl) {
         font-size: 7.5rem;
-    }
-    @include resp($xxl) {
-        font-size: 9rem;
     }
 }
 
