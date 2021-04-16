@@ -494,8 +494,21 @@
 #our_product .product_container .product_discription .row .accordion-button span {
   color: white;
 }
+#our_product .product_container .product_discription .row .accordion-button::after {
+  background-image: url("../icons/accordion/add_white.png");
+}
+@media only screen and (min-width: 1200px) {
+  #our_product .product_container .product_discription .row .accordion-button::after {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-size: 2.2rem;
+  }
+}
 #our_product .product_container .product_discription .row .accordion-button:not(.collapsed) {
   color: white;
+}
+#our_product .product_container .product_discription .row .accordion-button:not(.collapsed)::after {
+  background-image: url("../icons/accordion/minus_white.png");
 }
 
 .section_heading, #main .container .text .display-1 {

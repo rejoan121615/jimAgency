@@ -6,7 +6,7 @@
             padding-top: 0px;
         }
         .container {
-            @include resp ($xl) {
+            @include resp($xl) {
                 padding-top: 0px;
             }
         }
@@ -51,16 +51,29 @@
                     color: white;
                 }
                 .accordion-button {
-                    // responsive 
-                    @include resp ($xl) {
+                    // responsive
+                    @include resp($xl) {
                         font-size: 22px;
                     }
-                }
-                .accordion-button span {
-                    color: white;
-                }
-                .accordion-button:not(.collapsed) {
-                    color: white;
+
+                    span {
+                        color: white;
+                    }
+                    &::after {
+                        background-image: url('../icons/accordion/add_white.png');
+                        // responsive 
+                        @include resp ($xl) {
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            background-size: 2.2rem;
+                        }
+                    }
+                    &:not(.collapsed) {
+                        color: white;
+                        &::after {
+                            background-image: url("../icons/accordion/minus_white.png");
+                        }
+                    }
                 }
             }
         }
