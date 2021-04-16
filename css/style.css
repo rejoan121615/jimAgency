@@ -519,6 +519,24 @@
   color: white;
 }
 
+#footer {
+  background-color: white;
+}
+#footer .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer .container div a {
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+#footer .container div a:hover {
+  background-color: #e74c3c;
+}
+
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
   font-size: 5rem;

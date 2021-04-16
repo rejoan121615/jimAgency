@@ -1,0 +1,19 @@
+#footer {
+    background-color: white;
+    .container {
+        @include padY(50px, 50px);
+        div {
+            a {
+                color: black;
+                font-size: 1.4rem;
+                text-decoration: none;
+                text-align: center;
+                transition: background-color 0.5s;
+                // hover effect 
+                &:hover {
+                    background-color: $fifty_red;
+                }
+            }
+        }
+    }
+}
