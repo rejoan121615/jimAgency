@@ -511,6 +511,27 @@
   background-image: url("../icons/accordion/minus_white.png");
 }
 
+#getStarter {
+  background-color: white;
+}
+#getStarter .container .head_text .color {
+  color: #e74c3c;
+}
+#getStarter .container .head_text .para {
+  text-align: center;
+  font-size: 1.8rem;
+}
+#getStarter .container .row {
+  margin-top: 90px;
+}
+#getStarter .container .row .heading_md {
+  text-transform: uppercase;
+  color: black;
+}
+#getStarter .container .row .heading_md span {
+  color: #e74c3c;
+}
+
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
   font-size: 5rem;

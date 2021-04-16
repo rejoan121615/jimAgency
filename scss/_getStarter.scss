@@ -1,0 +1,25 @@
+#getStarter {
+    background-color: white;
+    .container {
+        .head_text {
+            .color {
+                color: $fifty_red;
+            }
+            .para {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+        }
+
+        .row {
+            margin-top: 90px;
+            .heading_md {
+                text-transform: uppercase;
+                color: black;
+                span {
+                    color: $fifty_red;
+                }
+            }
+        }
+    }
+}
