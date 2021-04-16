@@ -1,0 +1,17 @@
+#getInShape {
+    background: black url("../img/get_starter_now.png") no-repeat center center;
+    // @include resp($xl) {
+    //     background-size: cover;
+    // }
+    .container {
+        .section_heading,
+        .para,
+        .big_btn {
+            color: white;
+        }
+        .cus_btn {
+            background-color: $fifty_red;
+            color: white;
+        }
+    }
+}

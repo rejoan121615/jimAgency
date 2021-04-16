@@ -13,6 +13,7 @@
 @import "getAmpleFats";
 @import "ourProducts";
 @import 'getStarter';
+@import 'getInShape';
 
 // variable
 
@@ -89,3 +90,28 @@ i {
         color: $fifty_red;
     }
 }
+
+
+
+.cus_btn {
+            background-color: white;
+            color: $fifty_red;
+            font-size: 1.9rem;
+
+            text-transform: uppercase;
+            padding: 18px 35px;
+            font-weight: bold;
+            margin-top: 40px;
+            // responsive 
+            @include resp ($md) {
+                font-size: 2.4rem;
+                padding: 14px 25px;
+            }
+            @include resp ($lg) {
+                font-size: 3rem;
+                padding: 16px 30px;
+            }
+            @include resp ($xl) {
+                padding: 18px 35px;
+            }
+        }

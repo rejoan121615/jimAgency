@@ -170,32 +170,6 @@
   text-align: center;
   color: white;
 }
-#training_program .container .cus_btn {
-  background-color: white;
-  color: #e74c3c;
-  font-size: 1.9rem;
-  text-transform: uppercase;
-  padding: 18px 35px;
-  font-weight: bold;
-  margin-top: 40px;
-}
-@media only screen and (min-width: 768px) {
-  #training_program .container .cus_btn {
-    font-size: 2.4rem;
-    padding: 14px 25px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #training_program .container .cus_btn {
-    font-size: 3rem;
-    padding: 16px 30px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #training_program .container .cus_btn {
-    padding: 18px 35px;
-  }
-}
 
 #clients .client_container {
   padding-top: 150px;
@@ -532,6 +506,19 @@
   color: #e74c3c;
 }
 
+#getInShape {
+  background: black url("../img/get_starter_now.png") no-repeat center center;
+}
+#getInShape .container .section_heading, #getInShape #main .container .text .display-1, #main #getInShape .container .text .display-1,
+#getInShape .container .para,
+#getInShape .container .big_btn {
+  color: white;
+}
+#getInShape .container .cus_btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
 .section_heading, #main .container .text .display-1 {
   font-family: Bern;
   font-size: 5rem;
@@ -624,6 +611,33 @@ i {
 }
 .rules_head span, #eatALot .container .row .heading_sm span, #ear_frequently .container .heading_sm span, #getAmpleFats .container .row .heading_sm span, #eatALot .container .row .heading_md span, #ear_frequently .container .heading_md span, #getAmpleFats .container .row .heading_md span {
   color: #e74c3c;
+}
+
+.cus_btn {
+  background-color: white;
+  color: #e74c3c;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  padding: 18px 35px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .cus_btn {
+    font-size: 2.4rem;
+    padding: 14px 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cus_btn {
+    font-size: 3rem;
+    padding: 16px 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cus_btn {
+    padding: 18px 35px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
