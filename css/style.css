@@ -28,6 +28,10 @@
   text-align: center;
   color: black;
 }
+.navbar .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 @media only screen and (min-width: 992px) {
   .navbar .container {
     padding-top: 5px;
@@ -62,6 +66,9 @@
   background-color: black;
 }
 #main .container {
+  background: url("../img/tony_houston.png") no-repeat top center;
+  background-size: 80%;
+  height: 1100px;
   padding-top: 150px;
   padding-bottom: 80px;
 }
@@ -69,25 +76,49 @@
   #main .container {
     padding-top: 190px;
     padding-bottom: 125px;
+    background-size: 40%;
+    background-position: right center;
+    height: initial;
   }
 }
 @media only screen and (min-width: 1200px) {
   #main .container {
     padding-top: 225px;
     padding-bottom: 150px;
+    padding-top: 185px;
+    padding-bottom: 185px;
+  }
+}
+#main .container .text {
+  margin-top: 310px;
+}
+@media only screen and (min-width: 992px) {
+  #main .container .text {
+    margin-top: 0px;
   }
 }
 #main .container .text h1, #main .container .text p {
   text-align: center;
   color: white;
 }
+@media only screen and (min-width: 992px) {
+  #main .container .text h1, #main .container .text p {
+    text-align: left;
+  }
+}
 #main .container .text .text-white {
   text-transform: capitalize;
+}
+#main .container .text .text_color {
+  color: #ff5400 !important;
 }
 #main .container .text .para {
   margin-top: 25px;
 }
 
+#option .container {
+  padding-bottom: 55px !important;
+}
 #option .container .card {
   padding-left: 30px;
   padding-right: 30px;
@@ -99,6 +130,17 @@
 #option .container .card:hover {
   background-color: #e74c3c;
 }
+#option .container .card:first-child img {
+  max-width: 275px;
+}
+#option .container .card img {
+  max-width: 300px;
+}
+@media only screen and (min-width: 1200px) {
+  #option .container .card img {
+    max-width: 220px;
+  }
+}
 #option .container .card .card-title {
   font-family: SansMedium;
   font-size: 1.4rem;
@@ -109,12 +151,17 @@
   padding: 10px 22px;
   text-transform: capitalize;
   margin-top: 10px;
-  border: 2px solid transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: border 0.6s ease-out, color 0.6s ease-out;
+  text-decoration: none;
 }
 #option .container .card .card-link:hover {
   border: 2px solid white;
-  border-radius: 5px;
   color: white;
+}
+#option .program_container {
+  padding-bottom: 80px !important;
 }
 #option .program_container .row .head_title {
   text-align: center;
@@ -154,7 +201,7 @@
 }
 
 #training_program {
-  background: url("../img/training program.png") no-repeat center center;
+  background: url("../img/training-program.png") no-repeat center center;
   background-color: red;
   background-size: cover;
 }
@@ -498,11 +545,18 @@
 #getStarter .container .row {
   margin-top: 90px;
 }
-#getStarter .container .row .heading_md {
+#getStarter .container .row .col-12 {
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-in-out;
+}
+#getStarter .container .row .col-12:hover {
+  box-shadow: -3px -5px 40px #00000057, 3px 5px 40px #00000057;
+}
+#getStarter .container .row .col-12 .heading_md {
   text-transform: uppercase;
   color: black;
 }
-#getStarter .container .row .heading_md span {
+#getStarter .container .row .col-12 .heading_md span {
   color: #e74c3c;
 }
 
@@ -544,12 +598,18 @@
 }
 @media only screen and (min-width: 992px) {
   .section_heading, #main .container .text .display-1 {
-    font-size: 6.5rem;
+    font-size: 6rem;
   }
 }
+
 @media only screen and (min-width: 1200px) {
-  .section_heading, #main .container .text .display-1 {
+  .section_heading.big, #main .container .text .big.display-1 {
     font-size: 7.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section_heading.big, #main .container .text .big.display-1 {
+    font-size: 9rem;
   }
 }
 

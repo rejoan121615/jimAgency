@@ -5,6 +5,7 @@
         @include fonts(SansMedium, 1rem, uppercase, center, black);
     }
     .container {
+        @include padY(10px, 10px);
 
         @include resp ($lg) {
             padding-top: 5px;

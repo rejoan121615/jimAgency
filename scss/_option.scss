@@ -1,5 +1,6 @@
 #option {
     .container {
+        padding-bottom: 55px!important;
         .card {
             @include padX(30px, 30px);
             @include padY(65px, 65px);
@@ -8,6 +9,19 @@
             // animation
             &:hover {
                 background-color: $fifty_red;
+            }
+            &:first-child {
+                img {
+                    max-width: 275px;
+                }
+            }
+
+            img {
+                max-width: 300px;
+                // responsive
+                @include resp($xl) {
+                    max-width: 220px;
+                }
             }
 
             .card-title {
@@ -21,11 +35,13 @@
                 padding: 10px 22px;
                 text-transform: capitalize;
                 margin-top: 10px;
-                border: 2px solid transparent;
+                border: 2px solid black;
+                border-radius: 5px;
+                transition: border 0.6s ease-out, color 0.6s ease-out;
+                text-decoration: none;
                 // hover
                 &:hover {
                     border: 2px solid white;
-                    border-radius: 5px;
                     color: white;
                 }
             }
@@ -33,6 +49,7 @@
     }
     // program section
     .program_container {
+        padding-bottom: 80px!important;
         .row {
             .head_title {
                 text-align: center;

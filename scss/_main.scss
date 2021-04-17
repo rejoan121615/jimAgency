@@ -1,20 +1,39 @@
 #main {
     background-color: black;
     .container {
+        background: url('../img/tony_houston.png') no-repeat top center;
+        background-size: 80%;
+        height: 1100px;
         @include padY(150px, 80px);
 
+        // responsive 
         @include resp ($lg) {
             @include padY (190px, 125px);
+            background-size: 40%;
+            background-position: right center;
+            height: initial;
         }
 
         @include resp ($xl) {
             @include padY (225px, 150px);
+            @include padY (185px, 185px);
         }
+
         .text {
+            margin-top: 310px;
+            // responsive 
+            @include resp ($lg) {
+                margin-top: 0px;
+            }
+
             // common style 
             h1, p {
                 text-align: center;
                 color: white;
+                // responsive 
+                @include resp ($lg) {
+                    text-align: left;
+                }
             }
             .display-1 {
                 @extend .section_heading;
@@ -22,7 +41,9 @@
             .text-white {
                 text-transform: capitalize;
             }
-
+            .text_color {
+                color: #ff5400!important;
+            }
             .para {
                 margin-top: 25px;
             }

@@ -13,11 +13,18 @@
 
         .row {
             margin-top: 90px;
-            .heading_md {
-                text-transform: uppercase;
-                color: black;
-                span {
-                    color: $fifty_red;
+            .col-12 {
+                cursor: pointer;
+                transition: box-shadow 0.5s ease-in-out;
+                &:hover {
+                    box-shadow: -3px -5px 40px #00000057, 3px 5px 40px #00000057;
+                }
+                .heading_md {
+                    text-transform: uppercase;
+                    color: black;
+                    span {
+                        color: $fifty_red;
+                    }
                 }
             }
         }

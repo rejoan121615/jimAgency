@@ -24,10 +24,15 @@
     text-transform: capitalize;
     // responsibve
     @include resp($lg) {
-        font-size: 6.5rem;
+        font-size: 6rem;
     }
+}
+.section_heading.big {
     @include resp($xl) {
         font-size: 7.5rem;
+    }
+    @include resp ($xxl) {
+        font-size: 9rem;
     }
 }
 
